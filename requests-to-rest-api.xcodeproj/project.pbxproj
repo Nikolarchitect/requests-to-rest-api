@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89489DF628F73671005A5CE5 /* CellWithFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89489DF528F73671005A5CE5 /* CellWithFilm.swift */; };
+		89489DF828F73937005A5CE5 /* CellWithFilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89489DF728F73937005A5CE5 /* CellWithFilmViewModel.swift */; };
 		8972000028F49A50004E5DA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972FFFF28F49A50004E5DA3 /* SceneDelegate.swift */; };
 		8972000228F49A50004E5DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972000128F49A50004E5DA3 /* ViewController.swift */; };
 		8972000728F49A51004E5DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8972000628F49A51004E5DA3 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 		000899013BB74C15CCAA1902 /* Pods_requests_to_rest_api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_requests_to_rest_api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0CDF540E80CB2C3F01090B /* Pods-requests-to-rest-api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-requests-to-rest-api.debug.xcconfig"; path = "Target Support Files/Pods-requests-to-rest-api/Pods-requests-to-rest-api.debug.xcconfig"; sourceTree = "<group>"; };
 		7AC02EAE8A66A13B0F1B0E78 /* Pods-requests-to-rest-api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-requests-to-rest-api.release.xcconfig"; path = "Target Support Files/Pods-requests-to-rest-api/Pods-requests-to-rest-api.release.xcconfig"; sourceTree = "<group>"; };
+		89489DF528F73671005A5CE5 /* CellWithFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithFilm.swift; sourceTree = "<group>"; };
+		89489DF728F73937005A5CE5 /* CellWithFilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CellWithFilmViewModel.swift; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/CellWithFilmViewModel.swift"; sourceTree = "<group>"; };
 		8972000128F49A50004E5DA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8972000628F49A51004E5DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8972000928F49A51004E5DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,7 +50,6 @@
 				0A0CDF540E80CB2C3F01090B /* Pods-requests-to-rest-api.debug.xcconfig */,
 				7AC02EAE8A66A13B0F1B0E78 /* Pods-requests-to-rest-api.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -56,6 +59,15 @@
 				000899013BB74C15CCAA1902 /* Pods_requests_to_rest_api.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89489DF428F73654005A5CE5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89489DF528F73671005A5CE5 /* CellWithFilm.swift */,
+				89489DF728F73937005A5CE5 /* CellWithFilmViewModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		8972FFF128F49A50004E5DA3 = {
@@ -79,6 +91,7 @@
 		8972FFFC28F49A50004E5DA3 /* requests-to-rest-api */ = {
 			isa = PBXGroup;
 			children = (
+				89489DF428F73654005A5CE5 /* Cell */,
 				8972FFFD28F49A50004E5DA3 /* AppDelegate.swift */,
 				8972FFFF28F49A50004E5DA3 /* SceneDelegate.swift */,
 				8972000128F49A50004E5DA3 /* ViewController.swift */,
@@ -204,7 +217,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8972000228F49A50004E5DA3 /* ViewController.swift in Sources */,
+				89489DF628F73671005A5CE5 /* CellWithFilm.swift in Sources */,
 				8972FFFE28F49A50004E5DA3 /* AppDelegate.swift in Sources */,
+				89489DF828F73937005A5CE5 /* CellWithFilmViewModel.swift in Sources */,
 				8972000028F49A50004E5DA3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
