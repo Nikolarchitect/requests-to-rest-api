@@ -3,6 +3,7 @@
 //  requests-to-rest-api
 //
 //  Created by Nikolay Kiyko on 10.10.2022.
+//  Copyright ⓒ Nikolay Kiyko 2022. All rights reserved.
 //
 
 import UIKit

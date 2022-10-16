@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8926FBBC28FC312D0047D533 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8926FBBB28FC312D0047D533 /* NetworkService.swift */; };
+		8926FBBF28FC601D0047D533 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8926FBBE28FC601D0047D533 /* NetworkDataFetcher.swift */; };
 		89489DF628F73671005A5CE5 /* CellWithFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89489DF528F73671005A5CE5 /* CellWithFilm.swift */; };
 		89489DF828F73937005A5CE5 /* CellWithFilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89489DF728F73937005A5CE5 /* CellWithFilmViewModel.swift */; };
 		8972000028F49A50004E5DA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972FFFF28F49A50004E5DA3 /* SceneDelegate.swift */; };
@@ -21,6 +23,8 @@
 		000899013BB74C15CCAA1902 /* Pods_requests_to_rest_api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_requests_to_rest_api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0CDF540E80CB2C3F01090B /* Pods-requests-to-rest-api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-requests-to-rest-api.debug.xcconfig"; path = "Target Support Files/Pods-requests-to-rest-api/Pods-requests-to-rest-api.debug.xcconfig"; sourceTree = "<group>"; };
 		7AC02EAE8A66A13B0F1B0E78 /* Pods-requests-to-rest-api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-requests-to-rest-api.release.xcconfig"; path = "Target Support Files/Pods-requests-to-rest-api/Pods-requests-to-rest-api.release.xcconfig"; sourceTree = "<group>"; };
+		8926FBBB28FC312D0047D533 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8926FBBE28FC601D0047D533 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		89489DF528F73671005A5CE5 /* CellWithFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithFilm.swift; sourceTree = "<group>"; };
 		89489DF728F73937005A5CE5 /* CellWithFilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CellWithFilmViewModel.swift; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/CellWithFilmViewModel.swift"; sourceTree = "<group>"; };
 		8972000128F49A50004E5DA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8926FBBD28FC5FCF0047D533 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8926FBBB28FC312D0047D533 /* NetworkService.swift */,
+				8926FBBE28FC601D0047D533 /* NetworkDataFetcher.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		89489DF428F73654005A5CE5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 		8972FFFC28F49A50004E5DA3 /* requests-to-rest-api */ = {
 			isa = PBXGroup;
 			children = (
+				8926FBBD28FC5FCF0047D533 /* Networking */,
 				89489DF428F73654005A5CE5 /* Cell */,
 				8972FFFD28F49A50004E5DA3 /* AppDelegate.swift */,
 				8972FFFF28F49A50004E5DA3 /* SceneDelegate.swift */,
@@ -216,9 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8926FBBF28FC601D0047D533 /* NetworkDataFetcher.swift in Sources */,
 				8972000228F49A50004E5DA3 /* ViewController.swift in Sources */,
 				89489DF628F73671005A5CE5 /* CellWithFilm.swift in Sources */,
 				8972FFFE28F49A50004E5DA3 /* AppDelegate.swift in Sources */,
+				8926FBBC28FC312D0047D533 /* NetworkService.swift in Sources */,
 				89489DF828F73937005A5CE5 /* CellWithFilmViewModel.swift in Sources */,
 				8972000028F49A50004E5DA3 /* SceneDelegate.swift in Sources */,
 			);
