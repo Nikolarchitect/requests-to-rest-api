@@ -24,11 +24,12 @@ class ViewController: UIViewController {
         let tableView = UITableView(frame: CGRect.zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.separatorStyle = .singleLine
-//        tableView.separatorColor =
-        tableView.backgroundColor = .white
+        tableView.separatorColor = .systemGray2
+        tableView.backgroundColor = .systemGray5
         tableView.rowHeight = 90
         return tableView
     }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +54,7 @@ class ViewController: UIViewController {
     
     private func setupConstraints() {
         tableView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).inset(20)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).inset(16)
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottomMargin)
             make.left.right.equalToSuperview().inset(16)
         }
@@ -62,7 +63,6 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //Поколдовать!!
         return searchResponse?.results.count ?? 0
     }
     
@@ -70,6 +70,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellWithFilms, for: indexPath)
         let film = searchResponse?.results[indexPath.row]
         cell.textLabel?.text = film?.title
+        cell.textLabel?.font = Constants.Fonts.ui16InterSemi
+        cell.textLabel?.textColor = Constants.Colours.textColour
+        cell.detailTextLabel?.text = film?.description
+        cell.detailTextLabel?.font = Constants.Fonts.ui14InterRegular
+        cell.detailTextLabel?.textColor = Constants.Colours.textColour
         return cell
     }
 }
